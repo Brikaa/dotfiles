@@ -1,0 +1,2 @@
+EDITOR=vim
+PS1='[\e[0;34m\w\e[0m]\e[0;32m$\e[m '
