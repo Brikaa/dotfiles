@@ -10,3 +10,5 @@ alias deploy="git checkout deploy && git merge master && git push && git checkou
 alias compile="g++ -Wall"
 alias grep="grep --color"
 alias igt="sudo intel_gpu_top"
+alias systart="sudo systemctl start"
+alias systop="sudo systemctl stop"
