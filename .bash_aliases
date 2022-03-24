@@ -1,3 +1,4 @@
+alias claer="clear"
 alias clip="xclip -sel clip"
 alias cpwd="pwd | clip"
 alias apv="source venv/bin/activate"
