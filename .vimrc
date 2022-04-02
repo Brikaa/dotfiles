@@ -14,3 +14,7 @@ highlight colorcolumn ctermbg=lightgrey guibg=lightgrey
 autocmd BufWritePre * :%s/\s\+$//e
 " Relative line numbers
 set rnu
+" No search highlighting
+set nohlsearch
+" Spell-checking
+set spell
