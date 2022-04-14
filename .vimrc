@@ -16,5 +16,3 @@ autocmd BufWritePre * :%s/\s\+$//e
 set rnu
 " No search highlighting
 set nohlsearch
-" Spell-checking
-set spell
