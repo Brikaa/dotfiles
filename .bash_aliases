@@ -11,6 +11,7 @@ alias systart="sudo systemctl start"
 alias systop="sudo systemctl stop"
 alias gxx="g++ -Wall"
 alias nvrun="__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia"
+alias ff="cd \$(find ~ -type d -print 2>/dev/null | fzf)"
 
 slink() {
     ln -s "$PWD"/$1 $2
