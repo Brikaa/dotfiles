@@ -186,7 +186,7 @@ bindsym $mod+r mode "resize"
 
 workspace_layout tabbed
 assign [class="firefox"] 1
-assign [class="Alacritty"] 2
+assign [class="kitty"] 2
 assign [class="(?i)code"] 3
 assign [all] 4
 
