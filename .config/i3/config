@@ -50,6 +50,13 @@ bindsym $mod+Return exec i3-sensible-terminal
 # start firefox
 bindsym $mod+b exec firefox
 
+# Screenshot
+set $ss_path /tmp/magik_i3_screenshot.png
+# Region
+bindsym --release Shift+Print exec "import $ss_path && firefox $ss_path"
+# Window
+bindsym Print exec "import -window root $ss_path && firefox $ss_path"
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
