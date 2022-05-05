@@ -47,6 +47,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# start firefox
+bindsym $mod+b exec firefox
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -179,10 +182,14 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+workspace_layout tabbed
+assign [class="firefox"] 1
+assign [class="terminal"] 2
+assign [class="code"] 3
+assign [all] 4
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         status_command i3status
 }
-
-workspace_layout tabbed
