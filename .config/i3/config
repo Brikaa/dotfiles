@@ -185,7 +185,7 @@ bindsym $mod+r mode "resize"
 workspace_layout tabbed
 assign [class="firefox"] 1
 assign [class="terminal"] 2
-assign [class="code"] 3
+assign [class="(?i)code"] 3
 assign [all] 4
 
 # Start i3bar to display a workspace bar (plus the system information i3status
