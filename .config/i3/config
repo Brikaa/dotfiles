@@ -10,6 +10,8 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $browser chromium
+set $browser_class "(?i)chromium"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -47,15 +49,15 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
-# start firefox
-bindsym $mod+b exec firefox
+# start browser
+bindsym $mod+b exec $browser
 
 # Screenshot
 set $ss_path /tmp/magik_i3_screenshot.png
 # Region
-bindsym --release Shift+Print exec "import $ss_path && firefox $ss_path"
+bindsym --release Shift+Print exec "import $ss_path && $browser $ss_path"
 # Window
-bindsym Print exec "import -window root $ss_path && firefox $ss_path"
+bindsym Print exec "import -window root $ss_path && $browser $ss_path"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -193,7 +195,7 @@ bindsym $mod+r mode "resize"
 
 # preferred application workspaces
 workspace_layout tabbed
-assign [class="firefox"] 1
+assign [class=$browser_class] 1
 assign [class="kitty"] 2
 assign [class="(?i)code"] 3
 assign [all] 4

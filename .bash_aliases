@@ -14,13 +14,13 @@ alias nvrun="__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX
 alias ff="cd \$(find ~ -type d -print 2>/dev/null | fzf)"
 
 # University aliases
-alias uds="firefox 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35615_1&content_id=_440471_1&mode=reset'"
-alias umodeling="firefox 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35617_1&content_id=_440475_1&mode=reset'"
-alias udb="firefox 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35634_1&content_id=_440509_1&mode=reset'"
-alias uprocess="firefox 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35618_1&content_id=_440477_1&mode=reset'"
-alias urequirements="firefox 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35619_1&content_id=_440479_1&mode=reset'"
-alias umarketing="firefox 'https://drive.google.com/drive/folders/1-v3Vnbw3JNSEdQaAffEYdUa1eZILsu7Q'"
-alias uall="firefox 'https://cu.blackboard.com/ultra/stream'"
+alias uds="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35615_1&content_id=_440471_1&mode=reset'"
+alias umodeling="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35617_1&content_id=_440475_1&mode=reset'"
+alias udb="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35634_1&content_id=_440509_1&mode=reset'"
+alias uprocess="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35618_1&content_id=_440477_1&mode=reset'"
+alias urequirements="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35619_1&content_id=_440479_1&mode=reset'"
+alias umarketing="xdg-open 'https://drive.google.com/drive/folders/1-v3Vnbw3JNSEdQaAffEYdUa1eZILsu7Q'"
+alias uall="xdg-open 'https://cu.blackboard.com/ultra/stream'"
 
 # functions
 slink() {
