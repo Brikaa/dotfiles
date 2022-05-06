@@ -193,8 +193,14 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Prefer tabbed layout
+# prefer tabbed layout
 workspace_layout tabbed
+
+# preferred application workspaces
+assign [class=$browser_class] 1
+assign [class="kitty"] 2
+assign [class="(?i)code"] 3
+assign [all] 4
 
 # no blue borders
 default_border normal 0
