@@ -206,6 +206,9 @@ default_border none
 # automatically focus new windows in other workspaces
 focus_on_window_activation focus
 
+# prevent floating bugs on HiDPI
+floating_maximum_size 1500 x 800
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
