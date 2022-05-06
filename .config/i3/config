@@ -82,6 +82,10 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
+# c, z to focus right and left
+bindsym $mod+c focus right
+bindsym $mod+z focus left
+
 # move focused window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
