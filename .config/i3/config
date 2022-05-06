@@ -200,8 +200,8 @@ assign [class="kitty"] 2
 assign [class="(?i)code"] 3
 assign [all] 4
 
-# no borders
-default_border none
+# no blue borders
+default_border normal 0
 
 # automatically focus new windows in other workspaces
 focus_on_window_activation focus
