@@ -12,6 +12,7 @@
 set $mod Mod4
 set $browser firefox
 set $browser_class "firefox"
+set $terminal_class "kitty"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -203,7 +204,8 @@ workspace_layout tabbed
 # preferred application workspaces
 assign [class=$browser_class] 1
 for_window [class=$browser_class] focus
-assign [class="kitty"] 2
+assign [class=$terminal_class] 2
+for_window [class=$terminal_class] layout splitv # "focus_on_window_activation focus" to work with terminals only
 assign [class="(?i)code"] 3
 assign [all] 4
 
