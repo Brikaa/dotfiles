@@ -11,13 +11,22 @@ general {
         interval = 5
 }
 
+order += "volume master"
 order += "battery all"
 order += "cpu_usage"
 order += "memory"
 order += "tztime local"
 
+volume master {
+        format = "%devicename: %volume"
+        format_muted = "VOL: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
 battery all {
-        format = "%status %percentage %remaining"
+        format = "BAT: %status %percentage"
 }
 
 cpu_usage {
@@ -25,7 +34,7 @@ cpu_usage {
 }
 
 memory {
-        format = "%used"
+        format = "MEM: %used"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
