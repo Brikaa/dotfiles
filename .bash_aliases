@@ -15,13 +15,13 @@ alias ff="cd \$((find ~ -type d -print \\( -name node_modules -o -name \".npm\" 
     -o -name \".git\" -o -name \".cache\" -o -name \".mozilla\" \\) -prune 2>/dev/null | fzf) || echo \$PWD)"
 
 # University aliases
-alias uds="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35615_1&content_id=_440471_1&mode=reset'"
-alias umodeling="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35617_1&content_id=_440475_1&mode=reset'"
-alias udb="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35634_1&content_id=_440509_1&mode=reset'"
-alias uprocess="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35618_1&content_id=_440477_1&mode=reset'"
-alias urequirements="xdg-open 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35619_1&content_id=_440479_1&mode=reset'"
-alias umarketing="xdg-open 'https://drive.google.com/drive/folders/1-v3Vnbw3JNSEdQaAffEYdUa1eZILsu7Q'"
-alias uall="xdg-open 'https://cu.blackboard.com/ultra/stream'"
+alias uds="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35615_1&content_id=_440471_1&mode=reset'"
+alias umodeling="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35617_1&content_id=_440475_1&mode=reset'"
+alias udb="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35634_1&content_id=_440509_1&mode=reset'"
+alias uprocess="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35618_1&content_id=_440477_1&mode=reset'"
+alias urequirements="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35619_1&content_id=_440479_1&mode=reset'"
+alias umarketing="firefox --new-window 'https://drive.google.com/drive/folders/1-v3Vnbw3JNSEdQaAffEYdUa1eZILsu7Q'"
+alias uall="firefox --new-window 'https://cu.blackboard.com/ultra/stream'"
 
 # functions
 slink() {
