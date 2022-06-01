@@ -68,7 +68,7 @@ bindsym Print exec "import -window root $ss_path && $browser --new-window $ss_pa
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+r exec --no-startup-id "rofi -modi 'drun,window' -show window"
+bindcode 133 --release exec --no-startup-id "rofi -modi 'drun,window' -show window"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
