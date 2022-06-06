@@ -13,6 +13,7 @@ alias gxx="g++ -Wall"
 alias nvrun="__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia"
 alias ff="cd \$((find ~ -type d -print \\( -name node_modules -o -name \".npm\" \
     -o -name \".git\" -o -name \".cache\" -o -name \".mozilla\" \\) -prune 2>/dev/null | fzf) || echo \$PWD)"
+alias nethogs="sudo nethogs"
 
 # University aliases
 alias uds="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35615_1&content_id=_440471_1&mode=reset'"
