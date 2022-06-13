@@ -63,7 +63,7 @@ bindsym $mod+b exec $browser
 # Screenshot
 set $ss_path /tmp/magik_i3_screenshot.png
 # Region
-bindsym --release Shift+Print exec "import $ss_path && $browser --new-window $ss_path"
+bindsym --release $mod+Shift+s exec "import $ss_path && $browser --new-window $ss_path"
 # Window
 bindsym Print exec "import -window root $ss_path && $browser --new-window $ss_path"
 
