@@ -9,7 +9,6 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nm-applet
 exec --no-startup-id setxkbmap -layout us,ar -option grp:win_space_toggle
 exec --no-startup-id xset r rate 300 30
-exec --no-startup-id xmodmap ~/.xmodmap
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
