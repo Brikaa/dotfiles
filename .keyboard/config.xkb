@@ -1360,10 +1360,12 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
         symbols[Group2]= [     Arabic_seen, Arabic_kasratan,        NoSymbol,        NoSymbol ]
     };
     key <AC03> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               d,               D ],
-        symbols[Group2]= [      Arabic_yeh,    bracketright,        NoSymbol,        NoSymbol ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               d,               D,  End ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ],
+        symbols[Group2]= [      Arabic_yeh,    bracketright,  End ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ]
     };
     key <AC04> {
         type[group1]= "ALPHABETIC",
