@@ -7,7 +7,7 @@ font pango:monospace 8
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nm-applet
-exec --no-startup-id setxkbmap -layout us,ar -option grp:win_space_toggle
+exec --no-startup-id "xkbcomp ~/.keyboard/config.xkb :0"
 exec --no-startup-id xset r rate 300 30
 
 # Use pactl to adjust volume in PulseAudio.
