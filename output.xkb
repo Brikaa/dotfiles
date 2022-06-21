@@ -698,6 +698,15 @@ xkb_types "complete" {
         level_name[Level3]= "Alt Base";
         level_name[Level4]= "Alt Number";
     };
+    type "CUST_CAPSLOCK" {
+       modifiers= Shift+Lock;
+       map[Shift] = Level2;
+       map[Lock] = Level3;
+       map[Shift+Lock] = Level3;
+       level_name[Level1]= "Base";
+       level_name[Level2]= "Shift";
+       level_name[Level3]= "Lock";
+   };
 };
 
 xkb_compatibility "complete" {
@@ -1155,7 +1164,7 @@ xkb_compatibility "complete" {
         action= LockMods(modifiers=Lock);
     };
     interpret Any+Exactly(Lock) {
-        action= LockMods(modifiers=Lock);
+        action= SetMods(modifiers=Lock);
     };
     interpret Any+AnyOf(all) {
         action= SetMods(modifiers=modMapMods,clearLocks);
@@ -1363,28 +1372,36 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
         symbols[Group2]= [      Arabic_lam,           UFEF7,        NoSymbol,        NoSymbol ]
     };
     key <AC06> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               h,               H ],
-        symbols[Group2]= [     Arabic_alef, Arabic_hamzaonalef,           U0671,        NoSymbol ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               h,               H,             Left ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<LEFT>, clearmods=Lock) ],
+        symbols[Group2]= [     Arabic_alef, Arabic_hamzaonalef,           Left ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<LEFT>, clearmods=Lock) ]
     };
     key <AC07> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               j,               J ],
-        symbols[Group2]= [      Arabic_teh,  Arabic_tatweel,        NoSymbol,        NoSymbol ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               j,               J,        Down ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<DOWN>, clearmods=Lock) ],
+        symbols[Group2]= [      Arabic_teh,  Arabic_tatweel,        Down ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<DOWN>, clearmods=Lock) ]
     };
     key <AC08> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               k,               K ],
-        symbols[Group2]= [     Arabic_noon,    Arabic_comma,           U066B,        NoSymbol ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               k,               K,            Up ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<UP>, clearmods=Lock) ],
+        symbols[Group2]= [     Arabic_noon,    Arabic_comma,           Up ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<UP>, clearmods=Lock) ]
     };
     key <AC09> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               l,               L ],
-        symbols[Group2]= [     Arabic_meem,           slash,        NoSymbol,        NoSymbol ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               l,               L, Right ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<RGHT>, clearmods=Lock) ],
+        symbols[Group2]= [     Arabic_meem,           slash,        Right ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<RGHT>, clearmods=Lock) ]
     };
     key <AC10> {
         type[group2]= "FOUR_LEVEL",
