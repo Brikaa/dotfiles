@@ -1284,10 +1284,10 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
     key <AD03> {
         type[group1]= "CUST_CAPSLOCK",
         type[group2]= "CUST_CAPSLOCK",
-        symbols[Group1]= [               e,               E,         End ],
-        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ],
-        symbols[Group2]= [     Arabic_theh,    Arabic_damma,          End ],
-        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ]
+        symbols[Group1]= [               e,               E,         Home ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<HOME>, clearmods=Lock) ],
+        symbols[Group2]= [     Arabic_theh,    Arabic_damma,          Home ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<HOME>, clearmods=Lock) ]
     };
     key <AD04> {
         type[group1]= "ALPHABETIC",
@@ -1374,10 +1374,10 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
     key <AC05> {
         type[group1]= "CUST_CAPSLOCK",
         type[group2]= "CUST_CAPSLOCK",
-        symbols[Group1]= [               g,               G,         Home ],
-        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<HOME>, clearmods=Lock) ],
-        symbols[Group2]= [      Arabic_lam,           UFEF7,        Home ],
-        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<HOME>, clearmods=Lock) ]
+        symbols[Group1]= [               g,               G,         End ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ],
+        symbols[Group2]= [      Arabic_lam,           UFEF7,        End ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ]
     };
     key <AC06> {
         type[group1]= "CUST_CAPSLOCK",
