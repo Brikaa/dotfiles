@@ -1306,10 +1306,12 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
         symbols[Group2]= [    Arabic_ghain, Arabic_hamzaunderalef,        NoSymbol,           U202A ]
     };
     key <AD07> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               u,               U ],
-        symbols[Group2]= [      Arabic_ain,           grave,        NoSymbol,           U202B ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               u,               U, Prior ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGUP>, clearmods=Lock) ],
+        symbols[Group2]= [      Arabic_ain,           grave,        Prior ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGUP>, clearmods=Lock) ]
     };
     key <AD08> {
         type[group1]= "ALPHABETIC",
@@ -1324,10 +1326,12 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
         symbols[Group2]= [     Arabic_khah,        multiply,        NoSymbol,        NoSymbol ]
     };
     key <AD10> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               p,               P ],
-        symbols[Group2]= [      Arabic_hah, Arabic_semicolon,        NoSymbol,           U200E ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               p,               P,           Next ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGDN>, clearmods=Lock) ],
+        symbols[Group2]= [      Arabic_hah, Arabic_semicolon,        Next ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGDN>, clearmods=Lock) ]
     };
     key <AD11> {
         type[group2]= "FOUR_LEVEL",
