@@ -1282,10 +1282,12 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
         symbols[Group2]= [      Arabic_sad, Arabic_fathatan,        NoSymbol,           U2067 ]
     };
     key <AD03> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               e,               E ],
-        symbols[Group2]= [     Arabic_theh,    Arabic_damma,        NoSymbol,           U2068 ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               e,               E,         End ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ],
+        symbols[Group2]= [     Arabic_theh,    Arabic_damma,          End ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ]
     };
     key <AD04> {
         type[group1]= "ALPHABETIC",
@@ -1370,10 +1372,12 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
         symbols[Group2]= [      Arabic_beh,     bracketleft,      Arabic_peh,        NoSymbol ]
     };
     key <AC05> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               g,               G ],
-        symbols[Group2]= [      Arabic_lam,           UFEF7,        NoSymbol,        NoSymbol ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               g,               G,         Home ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<HOME>, clearmods=Lock) ],
+        symbols[Group2]= [      Arabic_lam,           UFEF7,        Home ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<HOME>, clearmods=Lock) ]
     };
     key <AC06> {
         type[group1]= "CUST_CAPSLOCK",
@@ -1435,10 +1439,12 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
         symbols[Group2]= [ Arabic_hamzaonyeh,      asciitilde,  guillemotright,           U203A ]
     };
     key <AB02> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               x,               X ],
-        symbols[Group2]= [    Arabic_hamza,    Arabic_sukun,   guillemotleft,           U2039 ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               x,               X,    Escape ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<ESC>, clearmods=Lock) ],
+        symbols[Group2]= [    Arabic_hamza,    Arabic_sukun,   guillemotleft,           U2039 ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<ESC>, clearmods=Lock) ]
     };
     key <AB03> {
         type[group1]= "ALPHABETIC",
