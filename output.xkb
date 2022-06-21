@@ -1161,10 +1161,10 @@ xkb_compatibility "complete" {
         action= LockMods(modifiers=LevelFive);
     };
     interpret Caps_Lock+AnyOfOrNone(all) {
-        action= LockMods(modifiers=Lock);
+        action= SetMods(modifiers=Lock);
     };
     interpret Any+Exactly(Lock) {
-        action= SetMods(modifiers=Lock);
+        action= LockMods(modifiers=Lock);
     };
     interpret Any+AnyOf(all) {
         action= SetMods(modifiers=modMapMods,clearLocks);
