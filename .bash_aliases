@@ -23,6 +23,7 @@ alias uprocess="firefox --new-window 'https://cu.blackboard.com/webapps/blackboa
 alias urequirements="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35619_1&content_id=_440479_1&mode=reset'"
 alias umarketing="firefox --new-window 'https://drive.google.com/drive/folders/1-v3Vnbw3JNSEdQaAffEYdUa1eZILsu7Q'"
 alias uall="firefox --new-window 'https://cu.blackboard.com/ultra/stream'"
+alias night="redshift -O 4500k -P"
 
 # functions
 slink() {
