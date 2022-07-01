@@ -15,16 +15,10 @@ alias ff="cd \$((find ~ -type d -print \\( -name node_modules -o -name \".npm\" 
     -o -name \".git\" -o -name \".cache\" -o -name \".mozilla\" -o -name \"venv\" -o -name \"env\" \\) \
 	-prune 2>/dev/null | fzf) || echo \$PWD)"
 alias nethogs="sudo nethogs"
+alias night="redshift -O 4500k -P"
 
 # University aliases
-alias uds="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35615_1&content_id=_440471_1&mode=reset'"
-alias umodeling="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35617_1&content_id=_440475_1&mode=reset'"
-alias udb="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35634_1&content_id=_440509_1&mode=reset'"
-alias uprocess="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35618_1&content_id=_440477_1&mode=reset'"
-alias urequirements="firefox --new-window 'https://cu.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_35619_1&content_id=_440479_1&mode=reset'"
-alias umarketing="firefox --new-window 'https://drive.google.com/drive/folders/1-v3Vnbw3JNSEdQaAffEYdUa1eZILsu7Q'"
 alias uall="firefox --new-window 'https://cu.blackboard.com/ultra/stream'"
-alias night="redshift -O 4500k -P"
 
 # functions
 slink() {
