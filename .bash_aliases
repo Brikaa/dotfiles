@@ -12,7 +12,8 @@ alias systop="sudo systemctl stop"
 alias gxx="g++ -Wall"
 alias nvrun="__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia"
 alias ff="cd \$((find ~ -type d -print \\( -name node_modules -o -name \".npm\" \
-    -o -name \".git\" -o -name \".cache\" -o -name \".mozilla\" \\) -prune 2>/dev/null | fzf) || echo \$PWD)"
+    -o -name \".git\" -o -name \".cache\" -o -name \".mozilla\" -o -name \"venv\" -o -name \"env\" \\) \
+	-prune 2>/dev/null | fzf) || echo \$PWD)"
 alias nethogs="sudo nethogs"
 
 # University aliases
