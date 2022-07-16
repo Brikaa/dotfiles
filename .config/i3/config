@@ -95,6 +95,8 @@ assign [class=$browser_class] 1
 for_window [class=$browser_class] focus
 assign [class=$terminal_class] 2
 assign [class="(?i)code"] 3
+assign [class="(?i)upwork"] 5
+assign [class="zoom"] 6
 assign [all] 4
 
 # no blue borders
