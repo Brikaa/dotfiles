@@ -1,6 +1,6 @@
 set $mod Mod4
-set $browser firefox
-set $browser_class "firefox"
+set $browser chromium
+set $browser_class "(?i)chromium"
 set $terminal_class "kitty"
 
 font pango:monospace 8

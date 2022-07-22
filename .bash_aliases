@@ -17,9 +17,6 @@ alias ff="cd \$((find ~ -type d -print \\( -name node_modules -o -name \".npm\" 
 alias nethogs="sudo nethogs"
 alias night="redshift -O 4500k -P"
 
-# University aliases
-alias uall="firefox --new-window 'https://cu.blackboard.com/ultra/stream'"
-
 # functions
 slink() {
     ln -s "$PWD"/$1 $2
