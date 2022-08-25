@@ -91,6 +91,8 @@ bindsym $mod+Shift+d exec --no-startup-id "xrandr --auto"
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # lock
 bindsym $mod+Escape exec "i3lock -c 000000"
+# keyboard bindings
+bindsym $mod+shift+k exec "~/.keyboard/set-config.sh"
 
 workspace_layout tabbed
 assign [class=$browser_class] 1
