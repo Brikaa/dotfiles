@@ -15,6 +15,7 @@ alias ff="cd \$((find ~ -type d -print \\( -name node_modules -o -name \".npm\" 
     -o -name \".git\" -o -name \".cache\" -o -name \".mozilla\" -o -name \"venv\" -o -name \"env\" \\) \
 	-prune 2>/dev/null | fzf) || echo \$PWD)"
 alias nethogs="sudo nethogs"
+alias iotop="sudo iotop"
 alias night="redshift -O 4500k -P"
 
 # functions
