@@ -97,6 +97,7 @@ bindsym $mod+shift+k exec "~/.keyboard/set-config.sh"
 workspace_layout tabbed
 assign [class=$browser_class] 1
 for_window [class=$browser_class] focus
+for_window [class="mpv"] focus
 assign [class=$terminal_class] 2
 assign [class="(?i)code"] 3
 assign [class="(?i)upwork"] 5
