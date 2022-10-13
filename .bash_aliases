@@ -17,6 +17,7 @@ alias ff="cd \$((find ~ -type d -print \\( -name node_modules -o -name \".npm\" 
 alias nethogs="sudo nethogs"
 alias iotop="sudo iotop"
 alias night="redshift -O 4500k -P"
+alias pdf="brave"
 
 # functions
 slink() {
