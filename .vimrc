@@ -13,7 +13,7 @@ highlight colorcolumn ctermbg=lightgrey guibg=lightgrey
 " Remove trailing whitespaces on saving
 autocmd BufWritePre * :%s/\s\+$//e
 " Relative line numbers
-set rnu
+set nu rnu
 " No search highlighting
 set nohlsearch
 " Use mouse
