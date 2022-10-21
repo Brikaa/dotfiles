@@ -1,3 +1,11 @@
+open_file_with_extension() {
+    case "$1" in
+        *.png | *.pdf) brave "$1" ;;
+        *.pptx | *.ppt | *.doc | *.docx) libreoffice "$1" ;;
+        *.mp3 | *.wav | *.mp4 | *.mkv) mpv "$1" ;;
+    esac
+}
+
 alias claer="clear"
 alias clip="xclip -sel clip"
 alias cpwd="pwd | clip"
@@ -18,8 +26,9 @@ alias nethogs="sudo nethogs"
 alias iotop="sudo iotop"
 alias night="redshift -O 4500k -P"
 alias pdf="brave"
-UNIVERSITY_FOLDER="~/p/third-year-first-semester"
-alias fpdf="pdf \$((find $UNIVERSITY_FOLDER \\( -name *.pdf -o -name *.pptx -o -name *.png -o -name *.mp3 \\)\
+UNIVERSITY_FOLDER="/home/omar/p/third-year-first-semester"
+alias fpdf="open_file_with_extension \$((find $UNIVERSITY_FOLDER \
+    \\( -name \"*.pdf\" -o -name \"*.pptx\" -o -name \"*.png\" -o -name \"*.mp3\" \\)\
 	-print \\( -name node_modules -o -name \".npm\" \
     -o -name \".git\" -o -name \".cache\" -o -name \".mozilla\" -o -name \"venv\" -o -name \"env\" \\) \
 	-prune 2>/dev/null | fzf) || echo \"--version\")"
