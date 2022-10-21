@@ -2,9 +2,9 @@ UNIVERSITY_FOLDER="/home/omar/p/third-year-first-semester"
 
 open_file_with_extension() {
     case "$1" in
-        *.png | *.pdf) brave "$1" ;;
-        *.pptx | *.ppt | *.doc | *.docx) libreoffice "$1" ;;
-        *.mp3 | *.wav | *.mp4 | *.mkv) mpv "$1" ;;
+        *.png | *.pdf) brave "$1" && cd $(dirname "$1") ;;
+        *.pptx | *.ppt | *.doc | *.docx) libreoffice "$1" && cd $(dirname "$1") ;;
+        *.mp3 | *.wav | *.mp4 | *.mkv) mpv "$1" && cd $(dirname "$1") ;;
     esac
 }
 
