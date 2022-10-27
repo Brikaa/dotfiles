@@ -8,10 +8,6 @@ open_file_with_extension() {
     esac
 }
 
-slink() {
-    ln -s "$PWD"/$1 $2
-}
-
 alias claer="clear"
 alias clip="xclip -sel clip"
 alias cpwd="pwd | clip"
