@@ -1,5 +1,3 @@
-UNIVERSITY_FOLDER="/home/omar/p/third-year-first-semester"
-
 open_file_with_extension() {
     case "$1" in
         *.png | *.pdf) brave "$1" && cd $(dirname "$1") ;;
@@ -25,6 +23,7 @@ alias ff="cd \$((find ~ -type d -print \\( -name node_modules -o -name \".npm\" 
     -o -name \".git\" -o -name \".cache\" -o -name \".mozilla\" -o -name \"venv\" -o -name \"env\" \\) \
 	-prune 2>/dev/null | fzf) || echo \$PWD)"
 alias nethogs="sudo nethogs"
+alias todo="$EDITOR ~/TODO.txt"
 alias iotop="sudo iotop"
 alias night="redshift -O 4500k -P"
 alias pdf="brave"
