@@ -1,1 +1,4 @@
 -name node_modules -o -name .npm -o -name .git -o -name .cache -o -name .mozilla -o -name venv -o -name env
+-o -path /home/omar/.nvm -o -path /home/omar/.cargo -o -path /home/omar/p/vscode -o -path /home/omar/p/piston*/data
+-o -path /home/omar/.m2 -o -path /home/omar/.rustup -o -path /home/omar/.vscode -o -path /home/omar/.config/Code
+-o -path /home/omar/.eclipse -o -path /home/omar/.config/BraveSoftware -o -path /home/omar/.config/chromium
