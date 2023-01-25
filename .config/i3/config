@@ -29,9 +29,9 @@ bindsym $mod+t exec i3-sensible-terminal
 bindsym $mod+b exec $browser "about:blank"
 
 # Screenshot
-set $ss_path /tmp/magik_i3_screenshot.png
-bindsym --release $mod+Shift+s exec "import $ss_path && $browser $ss_path"
-bindsym Print exec "import -window root $ss_path && $browser $ss_path"
+set $ss_path /tmp/magik
+bindsym --release $mod+Shift+s exec "mkdir -p $ss_path && magik_path=$ss_path/$(date +%s%N).png bash -c 'import $magik_path && $browser $magik_path'"
+bindsym Print exec "mkdir -p $ss_path && magik_path=$ss_path/$(date +%s%N).png bash -c 'import -window root $magik_path && $browser $magik_path'"
 
 bindsym $mod+Shift+q kill
 bindsym $mod+r exec --no-startup-id "rofi -modi 'drun,window' -show window"
