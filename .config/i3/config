@@ -35,6 +35,8 @@ bindsym Print exec "mkdir -p $ss_path && magik_path=$ss_path/$(date +%s%N).png b
 
 bindsym $mod+Shift+q kill
 bindsym $mod+r exec --no-startup-id "rofi -modi 'drun,window' -show window"
+# greek letters
+bindsym $mod+period exec --no-startup-id "rofimoji -f math"
 
 bindsym $mod+Left focus left
 bindsym $mod+Right focus right
