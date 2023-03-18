@@ -2,3 +2,5 @@
 -o -path /home/omar/.nvm -o -path /home/omar/.cargo -o -path /home/omar/p/vscode -o -path /home/omar/p/piston*/data
 -o -path /home/omar/.m2 -o -path /home/omar/.rustup -o -path /home/omar/.vscode -o -path /home/omar/.config/Code
 -o -path /home/omar/.eclipse -o -path /home/omar/.config/BraveSoftware -o -path /home/omar/.config/chromium
+-o -path /home/omar/.cpan -o -path /home/omar/go -o -path /home/omar/eclipse-workspace
+-o -path /home/omar/.thunderbird
