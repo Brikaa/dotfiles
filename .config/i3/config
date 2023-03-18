@@ -1,6 +1,7 @@
 set $mod Mod4
 set $browser brave
 set $browser_class "(?i)brave"
+set $email_client_class "(?i)thunderbird"
 set $terminal_class "kitty"
 
 font pango:monospace 8
@@ -100,11 +101,12 @@ workspace_layout tabbed
 assign [class=$browser_class] 1
 for_window [class=$browser_class] focus
 for_window [class="mpv"] focus
+for_window [class=$email_client_class] focus
 assign [class=$terminal_class] 2
 assign [class="(?i)code"] 3
 assign [class="(?i)upwork"] 5
 assign [class="zoom"] 6
-assign [class="(?i)thunderbird"] 7
+assign [class=$email_client_class] 7
 assign [all] 4
 
 # no blue borders
