@@ -107,6 +107,7 @@ assign [class="(?i)code"] 3
 assign [class="(?i)upwork"] 5
 assign [class="zoom"] 6
 assign [class=$email_client_class] 7
+assign [class="(?i)discord"] 7
 assign [all] 4
 
 # no blue borders
