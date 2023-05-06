@@ -3,4 +3,5 @@
 -o -path /home/omar/.m2 -o -path /home/omar/.rustup -o -path /home/omar/.vscode -o -path /home/omar/.config/Code
 -o -path /home/omar/.eclipse -o -path /home/omar/.config/BraveSoftware -o -path /home/omar/.config/chromium
 -o -path /home/omar/.cpan -o -path /home/omar/go -o -path /home/omar/eclipse-workspace
--o -path /home/omar/.thunderbird
+-o -path /home/omar/.thunderbird -o -path /home/omar/jboss-eap-7.1 -o -path /home/omar/.robocorp
+-o -path /home/omar/p/jboss-eap-7.1.0.GA-quickstarts
