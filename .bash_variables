@@ -4,4 +4,4 @@ PROMPT_COMMAND='echo -ne "\033]0;${PWD}\007"'
 export PATH="$HOME/.nix-profile/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 BROWSER=brave
 UNIVERSITY_FOLDER="/home/omar/p/third-year-second-semester"
-JBOSS_HOME="/opt/jboss-eap-7.1"
+JBOSS_HOME="/home/omar/jboss-eap-7.1"
