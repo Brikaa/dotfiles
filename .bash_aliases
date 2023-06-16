@@ -28,5 +28,3 @@ alias pdf="brave"
 alias fpdf='open_file_with_extension $((find $UNIVERSITY_FOLDER \
     \( -name "*.pdf" -o -name "*.pptx" -o -name "*.png" -o -name "*.mp3" \) \
 	-print \( $(cat ~/.findignore) \) -prune 2>/dev/null | fzf) || echo "--version")'
-alias fady="mpv ~/fun/fady.wav"
-alias bahaa="cat ~/fun/bahaa.txt"
