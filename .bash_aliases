@@ -1,9 +1,11 @@
 open_file_with_extension() {
     case "$1" in
-        *.png | *.pdf) brave "$1" && cd $(dirname "$1") ;;
-        *.pptx | *.ppt | *.doc | *.docx) libreoffice "$1" && cd $(dirname "$1") ;;
-        *.mp3 | *.wav | *.mp4 | *.mkv) mpv "$1" && cd $(dirname "$1") ;;
+        *.png | *.pdf) brave "$1" ;;
+        *.pptx | *.ppt | *.doc | *.docx) libreoffice "$1"  ;;
+        *.mp3 | *.wav | *.mp4 | *.mkv) mpv "$1"  ;;
+        *) echo "Unsupported file extension" ;;
     esac
+    cd "$(dirname "$1")"
 }
 
 alias claer="clear"
@@ -19,7 +21,7 @@ alias systart="sudo systemctl start"
 alias systop="sudo systemctl stop"
 alias gxx="g++ -Wall"
 alias nvrun="__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia"
-alias ff='cd $((find ~ -type d -print \( $(cat ~/.findignore) \) -prune 2>/dev/null | fzf) || echo $PWD)'
+alias ff='cd "$((find ~ -type d -print \( $(cat ~/.findignore) \) -prune 2>/dev/null | fzf) || echo $PWD)"'
 alias nethogs="sudo nethogs"
 alias todo="$EDITOR ~/TODO.txt"
 alias iotop="sudo iotop"
