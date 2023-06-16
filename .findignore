@@ -5,3 +5,5 @@
 -o -path /home/omar/.cpan -o -path /home/omar/go -o -path /home/omar/eclipse-workspace
 -o -path /home/omar/.thunderbird -o -path /home/omar/jboss-eap-7.1 -o -path /home/omar/.robocorp
 -o -path /home/omar/p/jboss-eap-7.1.0.GA-quickstarts
+-o -path /home/omar/p/typescript -o -path /home/omar/user/.node -o -path /home/omar/p/seam-project
+-o -path /home/omar/.config/microsoft-edge
