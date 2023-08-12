@@ -11,7 +11,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id "xkbcomp ~/.keyboard/config.xkb :0"
 exec --no-startup-id xset r rate 300 30
 exec --no-startup-id picom
-exec --no-startup-id "xrandr --output eDP-1 --gamma 0.6:0.6:0.6"
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -90,7 +89,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # Re-detect xrandr
-bindsym $mod+Shift+d exec --no-startup-id "xrandr --auto"
+bindsym $mod+Shift+d exec --no-startup-id "~/.screenlayout/layout.sh auto"
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # lock

@@ -1,0 +1,5 @@
+include base
+
+gaps top 150
+gaps bottom 50
+gaps horizontal 250
