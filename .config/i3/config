@@ -11,7 +11,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id "xkbcomp ~/.keyboard/config.xkb :0"
 exec --no-startup-id xset r rate 300 30
 exec --no-startup-id picom
-exec --no-startup-id "xrandr --output eDP-1 --gamma 0.6:0.6:0.6"
+exec --no-startup-id "xrandr --output eDP-1 --gamma 0.5:0.5:0.5"
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -120,6 +120,17 @@ focus_on_window_activation focus
 # prevent floating bugs on HiDPI
 floating_maximum_size 1500 x 800
 
+# Colors
+client.unfocused #b0b0b0 #dedede #1e1e1e #dedede #dedede
+client.focused #e8a2a2 #e8a2a2 #1e1e1e #e8a2a2 #e8a2a2
+client.background #dedede
+
 bar {
         status_command i3status
+        colors {
+                background #dedede
+                statusline #1e1e1e
+                focused_workspace #e8a2a2 #e8a2a2 #1e1e1e
+                inactive_workspace #b0b0b0 #b0b0b0 #1e1e1e
+        }
 }
