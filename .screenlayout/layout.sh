@@ -1,11 +1,12 @@
-gaps=""
+i3_monitor_config=""
 case "$1" in
     auto)
         xrandr --auto
-        gaps="off"
+        i3_monitor_config="off"
         ;;
     *)
         xrandr --output eDP-1 --off --output HDMI-1 --primary --auto
         ;;
 esac
-~/.screenlayout/gaps.sh $gaps
+~/.screenlayout/i3-monitor-config.sh $i3_monitor_config
+nitrogen --restore
