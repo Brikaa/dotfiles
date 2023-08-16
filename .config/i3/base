@@ -122,4 +122,5 @@ floating_maximum_size 1500 x 800
 
 bar {
         status_command i3status
+        position top
 }
