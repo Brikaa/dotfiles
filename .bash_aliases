@@ -30,3 +30,7 @@ alias pdf="brave"
 alias fpdf='open_file_with_extension $((find $UNIVERSITY_FOLDER \
     \( -name "*.pdf" -o -name "*.pptx" -o -name "*.png" -o -name "*.mp3" \) \
 	-print \( $(cat ~/.findignore) \) -prune 2>/dev/null | fzf) || echo "--version")'
+alias wstart='watson start work'
+alias wstop='watson stop'
+alias wlog='watson log'
+alias wstatus='watson status'
