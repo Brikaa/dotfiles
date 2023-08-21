@@ -4,8 +4,6 @@ syntax on
 " Tabs and indentation
 set ts=4 sw=4
 set autoindent
-" Escape to jk
-inoremap jk <Esc>
 " Ruler at 120 characters
 set colorcolumn=120
 " Ruler color
