@@ -3,9 +3,14 @@ open_file_with_extension() {
         *.png | *.pdf) brave "$1" ;;
         *.pptx | *.ppt | *.doc | *.docx) libreoffice "$1"  ;;
         *.mp3 | *.wav | *.mp4 | *.mkv) mpv "$1"  ;;
-        *) echo "Unsupported file extension" ;;
+        *) echo "Unsupported file extension" >&2 && return 1 ;;
     esac
     cd "$(dirname "$1")"
+}
+
+# custom_find(src, options)
+custom_find() {
+    find "$@" -print \( $(cat ~/.findignore) \) -prune 2>/dev/null
 }
 
 alias claer="clear"
@@ -21,15 +26,14 @@ alias systart="sudo systemctl start"
 alias systop="sudo systemctl stop"
 alias gxx="g++ -Wall"
 alias nvrun="__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia"
-alias ff='cd "$((find ~ -type d -print \( $(cat ~/.findignore) \) -prune 2>/dev/null | fzf) || echo $PWD)"'
+alias ff='cd "$((custom_find ~ -type d | fzf) || echo $PWD)"'
 alias nethogs="sudo nethogs"
 alias todo="$EDITOR ~/TODO.txt"
 alias iotop="sudo iotop"
 alias night="redshift -O 4500k -P"
 alias pdf="brave"
-alias fpdf='open_file_with_extension $((find $UNIVERSITY_FOLDER \
-    \( -name "*.pdf" -o -name "*.pptx" -o -name "*.png" -o -name "*.mp3" \) \
-	-print \( $(cat ~/.findignore) \) -prune 2>/dev/null | fzf) || echo "--version")'
+alias fpdf='open_file_with_extension $((custom_find $UNIVERSITY_FOLDER \
+    \( -name "*.pdf" -o -name "*.pptx" -o -name "*.png" -o -name "*.mp3" \) | fzf) || echo "--version") 2>/dev/null'
 alias wstart='watson start work'
 alias wstop='watson stop'
 alias wlog='watson log'
