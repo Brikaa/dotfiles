@@ -1316,16 +1316,20 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
         actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGUP>, clearmods=Lock) ]
     };
     key <AD08> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               i,               I ],
-        symbols[Group2]= [       Arabic_ha,        division,        NoSymbol,           U202C ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               i,               I,    Backspace ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<BKSP>, clearmods=Lock) ],
+        symbols[Group2]= [       Arabic_ha,        division,        NoSymbol,           U202C ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<BKSP>, clearmods=Lock) ]
     };
     key <AD09> {
-        type[group1]= "ALPHABETIC",
-        type[group2]= "FOUR_LEVEL",
-        symbols[Group1]= [               o,               O ],
-        symbols[Group2]= [     Arabic_khah,        multiply,        NoSymbol,        NoSymbol ]
+        type[group1]= "CUST_CAPSLOCK",
+        type[group2]= "CUST_CAPSLOCK",
+        symbols[Group1]= [               o,               O,    Delete ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<DELE>, clearmods=Lock) ],
+        symbols[Group2]= [     Arabic_khah,        multiply,        NoSymbol,        NoSymbol ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<DELE>, clearmods=Lock) ]
     };
     key <AD10> {
         type[group1]= "CUST_CAPSLOCK",
