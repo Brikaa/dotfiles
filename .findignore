@@ -1,9 +1,9 @@
 -name node_modules -o -name .npm -o -name .git -o -name .cache -o -name .mozilla -o -name venv -o -name env
--o -path /home/omar/.nvm -o -path /home/omar/.cargo -o -path /home/omar/p/vscode -o -path /home/omar/p/piston*/data
--o -path /home/omar/.m2 -o -path /home/omar/.rustup -o -path /home/omar/.vscode -o -path /home/omar/.config/Code
--o -path /home/omar/.eclipse -o -path /home/omar/.config/BraveSoftware -o -path /home/omar/.config/chromium
--o -path /home/omar/.cpan -o -path /home/omar/go -o -path /home/omar/eclipse-workspace
--o -path /home/omar/.thunderbird -o -path /home/omar/jboss-eap-7.1 -o -path /home/omar/.robocorp
--o -path /home/omar/p/jboss-eap-7.1.0.GA-quickstarts
--o -path /home/omar/p/typescript -o -path /home/omar/user/.node -o -path /home/omar/p/seam-project
--o -path /home/omar/.config/microsoft-edge
+-o -path ~/.nvm -o -path ~/.cargo -o -path ~/p/vscode -o -path ~/p/piston*/data
+-o -path ~/.m2 -o -path ~/.rustup -o -path ~/.vscode -o -path ~/.config/Code
+-o -path ~/.eclipse -o -path ~/.config/BraveSoftware -o -path ~/.config/chromium
+-o -path ~/.cpan -o -path ~/go -o -path ~/eclipse-workspace
+-o -path ~/.thunderbird -o -path ~/jboss-eap-7.1 -o -path ~/.robocorp
+-o -path ~/p/jboss-eap-7.1.0.GA-quickstarts
+-o -path ~/p/typescript -o -path ~/user/.node -o -path ~/p/seam-project
+-o -path ~/.config/microsoft-edge -o -path ~/p/linux

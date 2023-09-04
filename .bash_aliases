@@ -10,7 +10,7 @@ open_file_with_extension() {
 
 # custom_find(src, options)
 custom_find() {
-    find "$@" -print \( $(cat ~/.findignore) \) -prune 2>/dev/null
+    find "$@" -print \( $(eval echo $(cat ~/.findignore)) \) -prune 2>/dev/null
 }
 
 alias claer="clear"
