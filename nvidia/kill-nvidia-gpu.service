@@ -1,9 +1,0 @@
-[Unit]
-Description=Kill Nvidia GPU
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/sh -c "/usr/bin/echo 1 > /sys/bus/pci/devices/0000:01:00.0/remove"
-
-[Install]
-WantedBy=multi-user.target
