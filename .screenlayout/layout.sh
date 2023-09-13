@@ -9,5 +9,4 @@ case "$1" in
         ;;
 esac
 ~/.screenlayout/i3-monitor-config.sh $i3_monitor_config || exit 1
-sleep 5
-nitrogen --restore
+~/.config/i3/background.sh
