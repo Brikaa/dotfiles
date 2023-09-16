@@ -1,3 +1,0 @@
-- Author: Paris Buttfield-Addison
-- License: CC BY-SA
-- Link: https://wallpaperscraft.com/download/trees_milky_way_starry_sky_1038847/3840x2160
