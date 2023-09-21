@@ -1,6 +1,6 @@
 open_file_with_extension() {
     case "$1" in
-        *.png | *.pdf) brave "$1" ;;
+        *.png | *.pdf) firefox "$1" ;;
         *.pptx | *.ppt | *.doc | *.docx) libreoffice "$1"  ;;
         *.mp3 | *.wav | *.mp4 | *.mkv) mpv "$1"  ;;
         *) echo "Unsupported file extension" >&2 && return 1 ;;
@@ -31,7 +31,7 @@ alias nethogs="sudo nethogs"
 alias todo="$EDITOR ~/TODO.txt"
 alias iotop="sudo iotop"
 alias night="redshift -O 4500k -P"
-alias pdf="brave"
+alias pdf="firefox"
 alias fpdf='open_file_with_extension $((custom_find $UNIVERSITY_FOLDER \
     \( -name "*.pdf" -o -name "*.pptx" -o -name "*.png" -o -name "*.mp3" \) | fzf) || echo "--version") 2>/dev/null'
 alias wstart='watson start work'

@@ -1,6 +1,6 @@
 set $mod Mod4
-set $browser brave
-set $browser_class "(?i)brave"
+set $browser firefox
+set $browser_class "(?i)firefox"
 set $email_client_class "(?i)thunderbird"
 set $terminal_class "kitty"
 
