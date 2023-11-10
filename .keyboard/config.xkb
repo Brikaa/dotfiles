@@ -1380,10 +1380,10 @@ xkb_symbols "pc+us+ara:2+inet(evdev)+group(win_space_toggle):1+group(win_space_t
     key <AC05> {
         type[group1]= "CUST_CAPSLOCK",
         type[group2]= "CUST_CAPSLOCK",
-        symbols[Group1]= [               g,               G,         End ],
-        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ],
-        symbols[Group2]= [      Arabic_lam,           UFEF7,        End ],
-        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ]
+        symbols[Group1]= [               g,               G,         F12 ],
+        actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<F12>, clearmods=Lock) ],
+        symbols[Group2]= [      Arabic_lam,           UFEF7,        F12 ],
+        actions[Group2]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<F12>, clearmods=Lock) ]
     };
     key <AC06> {
         type[group1]= "CUST_CAPSLOCK",
