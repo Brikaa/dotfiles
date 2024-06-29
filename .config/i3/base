@@ -101,6 +101,7 @@ bindsym $mod+shift+k exec --no-startup-id "~/.keyboard/set-config.sh"
 workspace_layout tabbed
 assign [class=$browser_class] 1
 for_window [class=$browser_class] focus
+for_window [instance=Picture-in-Picture] sticky enable
 for_window [class="mpv"] focus
 for_window [class=$email_client_class] focus
 assign [class=$terminal_class] 2
