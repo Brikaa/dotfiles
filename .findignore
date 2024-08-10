@@ -7,5 +7,5 @@
 -o -path ~/p/jboss-eap-7.1.0.GA-quickstarts
 -o -path ~/p/typescript -o -path ~/user/.node -o -path ~/p/seam-project
 -o -path ~/.config/microsoft-edge -o -path ~/p/linux -o -path ~/p/gcc -o -path ~/Android
--o -path ~/.gradle -o -path ~/.local/share/Zeal
--o -path ~/.local/share/containers -o -path ~/p/envicutor/spec-src/drafts/tests
+-o -path ~/.gradle -o -path ~/p/envicutor/spec-src/drafts/tests
+-o -name target -o -path ~/.local/share -o -path ~/.config
