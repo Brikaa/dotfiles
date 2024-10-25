@@ -34,9 +34,9 @@ alias night="redshift -O 4500k -P"
 alias pdf="firefox"
 alias fpdf='open_file_with_extension $((custom_find $UNIVERSITY_FOLDER \
     \( -name "*.pdf" -o -name "*.pptx" -o -name "*.png" -o -name "*.mp3" \) | fzf) || echo "--version") 2>/dev/null'
-alias wstart='watson start work'
-alias wstop='watson stop'
+alias wstart='touch ~/.work-clock && watson start work'
+alias wstop='rm ~/.work-clock && watson stop'
 alias wlog='watson log'
 alias wstatus='watson status'
-alias suslock='~/.config/i3/i3lock.sh && systemctl suspend'
+alias woff="wstop && shutdown now"
 alias ll='ls -lavt --ignore=..'
