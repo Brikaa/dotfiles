@@ -38,5 +38,5 @@ alias wstart='touch ~/.work-clock && watson start work'
 alias wstop='rm ~/.work-clock && watson stop'
 alias wlog='watson log'
 alias wstatus='watson status'
-alias woff="wstop && shutdown now"
+alias woff="rm -rf ~/.work-clock && watson stop && shutdown now"
 alias ll='ls -lavt --ignore=..'
