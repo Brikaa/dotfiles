@@ -34,7 +34,7 @@ alias night="redshift -O 4500k -P"
 alias pdf="brave"
 alias fpdf='open_file_with_extension $((custom_find $UNIVERSITY_FOLDER \
     \( -name "*.pdf" -o -name "*.pptx" -o -name "*.png" -o -name "*.mp3" \) | fzf) || echo "--version") 2>/dev/null'
-alias wstart='touch ~/.work-clock && watson start work'
+alias wstart='read -p "Enter project name: " project_name && watson start $project_name && echo $project_name > ~/.work-clock'
 alias wstop='rm ~/.work-clock && watson stop'
 alias wlog='watson log'
 alias wstatus='watson status'
