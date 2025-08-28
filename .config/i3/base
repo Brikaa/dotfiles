@@ -99,7 +99,7 @@ bindsym $mod+Escape exec --no-startup-id "~/.config/i3/i3lock.sh"
 bindsym $mod+shift+k exec --no-startup-id "~/.keyboard/set-config.sh"
 
 workspace_layout tabbed
-assign [class=$browser_class] 1
+assign [class=$browser_class window_type=normal] 1
 for_window [class=$browser_class] focus
 for_window [instance=Picture-in-Picture] sticky enable
 for_window [class="mpv"] focus
@@ -111,7 +111,8 @@ assign [class="zoom"] 6
 assign [class=$email_client_class] 7
 assign [class="(?i)discord"] 7
 assign [class="(?i)slack"] 7
-assign [all] 4
+assign [all window_type=normal] 4
+for_window [window_type=dialog] floating enable
 
 # no blue borders
 default_border normal 0

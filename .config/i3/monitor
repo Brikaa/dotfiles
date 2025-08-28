@@ -3,3 +3,7 @@ include base
 gaps top 275
 gaps bottom 50
 gaps horizontal 380
+
+workspace 5 gaps top 0
+workspace 5 gaps bottom 0
+workspace 5 gaps horizontal 0
