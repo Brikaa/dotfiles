@@ -40,3 +40,4 @@ alias wlog='watson log'
 alias wstatus='watson status'
 alias woff='wstop; cd ~/.config/watson && git add -A && git commit -m "Feat" && git push; echo "Shutting down in 10 seconds..." && sleep 10 && shutdown now'
 alias ll='ls -lavt --ignore=..'
+alias invm="source /usr/share/nvm/init-nvm.sh"
