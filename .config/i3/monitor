@@ -7,3 +7,7 @@ gaps horizontal 380
 workspace 5 gaps top 0
 workspace 5 gaps bottom 0
 workspace 5 gaps horizontal 0
+
+workspace 4 gaps top 0
+workspace 4 gaps bottom 0
+workspace 4 gaps horizontal 0
