@@ -98,7 +98,7 @@ bindsym $mod+Shift+d exec --no-startup-id "~/.screenlayout/layout.sh auto"
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # lock
-bindsym $mod+Escape exec --no-startup-id "watson stop; i3lock -k -c 000000; watson restart"
+bindsym $mod+Escape exec --no-startup-id "watson stop; i3lock --nofork -k -c 000000; watson restart"
 # keyboard bindings
 bindsym $mod+shift+k exec --no-startup-id "~/.keyboard/set-config.sh"
 
