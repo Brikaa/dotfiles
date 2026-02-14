@@ -34,11 +34,11 @@ alias night="redshift -O 4500k -P"
 alias pdf="brave"
 alias fpdf='open_file_with_extension $((custom_find $UNIVERSITY_FOLDER \
     \( -name "*.pdf" -o -name "*.pptx" -o -name "*.png" -o -name "*.mp3" \) | fzf) || echo "--version") 2>/dev/null'
-alias wstart='read -p "Enter project name: " project_name && watson start $project_name && echo $project_name > ~/.work-clock'
-alias wstop='rm ~/.work-clock && watson stop'
-alias wlog='watson log'
+alias wproject='watson stop; watson start'
+alias wstop='wproject default'
+alias wlog='watson log -c'
 alias wstatus='watson status'
-alias woff='wstop; cd ~/.config/watson && git add -A && git commit -m "Feat" && git push; echo "Shutting down in 10 seconds..." && sleep 10 && shutdown now'
+alias woff='watson stop; cd ~/.config/watson && git add -A && git commit -m "Feat" && git push; echo "Shutting down in 10 seconds..." && sleep 10 && shutdown now'
 alias ll='ls -lavtr --ignore=..'
 alias invm="source /usr/share/nvm/init-nvm.sh"
 alias layout="~/.screenlayout/layout.sh"
